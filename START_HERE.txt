@@ -1,0 +1,66 @@
+AJI FASHION MARKETPLACE - START HERE
+====================================
+
+WHAT YOU NEED
+-------------
+1. Windows 10/11 64-bit.
+2. Python 3.10 or newer installed from python.org.
+3. Your PC and phone connected to the SAME Wi-Fi when using phone access.
+
+OPTION 1: RUN ON THE COMPUTER
+-----------------------------
+1. Extract this ZIP folder.
+2. Open the project folder.
+3. Double-click: run_desktop.bat
+4. The first run creates a .venv folder and installs Flet 0.28.3.
+5. The Fashion Marketplace opens on the computer.
+6. Demo buyer: buyer@example.com / buyer123
+
+OPTION 2: OPEN THE MARKETPLACE ON YOUR PHONE
+---------------------------------------------
+1. Connect the PC and phone to the SAME Wi-Fi network.
+2. On the PC, double-click: run_phone.bat
+3. Leave the black command window open.
+4. Look for an IPv4 address such as 192.168.1.5.
+5. On your phone, open Chrome.
+6. Type: http://192.168.1.5:8550
+   Replace 192.168.1.5 with the IPv4 address shown on your PC.
+7. The Fashion Marketplace should open in the phone browser.
+
+IMPORTANT
+---------
+- The PC must remain ON while the phone is using the application.
+- The run_phone.bat window must remain open.
+- The PC and phone must normally be on the same local network.
+- Do not expose this academic prototype directly to the public internet.
+
+IF THE PHONE CANNOT CONNECT
+---------------------------
+1. Confirm both devices are on the same Wi-Fi.
+2. Run check_connection.bat and use the Wi-Fi adapter's IPv4 address.
+3. Try the exact URL with :8550 at the end.
+4. Windows may ask whether Python/Flet can communicate through the firewall.
+   Allow it on PRIVATE networks if you trust your local network.
+5. If the network is a school/office/public Wi-Fi, client-to-client traffic
+   may be blocked. Try a personal hotspot or home Wi-Fi.
+6. Do not use 127.0.0.1 or localhost on the phone; those refer to the phone.
+
+DEMO ACCOUNTS
+-------------
+Buyer: buyer@example.com / buyer123
+Seller: seller@example.com / seller123
+Admin: admin@example.com / admin123
+
+FILES
+-----
+app.py                 Main application
+requirements.txt       Pinned Flet dependency
+run_desktop.bat        One-click PC launcher
+run_phone.bat          One-click phone/web launcher
+check_connection.bat   Shows PC IPv4 addresses
+README.md              Full project notes
+
+TECHNICAL NOTE
+--------------
+The phone version is a browser-based Flet session. The Python application and
+SQLite database continue to run on the PC; the phone is the client interface.
